@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault | Download Your Favorite Games</title>
+    <style>
+        /* Basic Reset and Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121214;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header / Navigation */
+        header {
+            background-color: #1a1a1e;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ff4655;
+        }
+        header h1 {
+            color: #ff4655;
+            font-size: 24px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff4655;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(18, 18, 20, 0.8), #121214), url('https://via.placeholder.com/1920x400') no-repeat center/cover;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        /* Games Grid Container */
+        .games-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Individual Game Card */
+        .game-card {
+            background-color: #1a1a1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 70, 85, 0.2);
+        }
+        .game-img {
+            width: 100%;
+            height: 200px;
+            background-color: #333;
+            object-fit: cover;
+        }
+        .game-details {
+            padding: 20px;
+        }
+        .game-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .game-info {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        /* Download Button Style */
+        .download-btn {
+            display: inline-block;
+            background-color: #ff4655;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #e03e4b;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #1a1a1e;
+            color: #666;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GameVault</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">PC Games</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Top Trending Games</h2>
+        <p>Download the latest and greatest games directly to your PC.</p>
+    </section>
+
+    <main class="games-container">
+
+        <article class="game-card">
+            <img src="https://via.placeholder.com/350x200?text=Grand+Theft+Auto+V" alt="GTA V Cover" class="game-img">
+            <div class="game-details">
+                <h3 class="game-title">Grand Theft Auto V</h3>
+                <p class="game-info">Experience Rockstar Games' critically acclaimed open-world game. Explore the sprawling world of Los Santos and Blaine County.</p>
+                <a href="YOUR_GTA_V_DOWNLOAD_LINK_HERE" class="download-btn">Download Now</a>
+            </div>
+        </article>
+
+        <article class="game-card">
+            <img src="https://via.placeholder.com/350x200?text=FIFA+23" alt="FIFA 23 Cover" class="game-img">
+            <div class="game-details">
+                <h3 class="game-title">FIFA 23</h3>
+                <p class="game-info">Bring The World’s Game to the pitch, with HyperMotion2 Technology, both men’s and women’s FIFA World Cup™ tournaments.</p>
+                <a href="YOUR_FIFA_23_DOWNLOAD_LINK_HERE" class="download-btn">Download Now</a>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GameVault. For educational purposes only.</p>
+    </footer>
+
+</body>
+</html>
